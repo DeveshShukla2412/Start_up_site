@@ -43,6 +43,14 @@ section
     align-items: center;
     padding: 100px 80px;
 }
+
+@media screen and (max-width:800px)
+{
+section 
+{
+padding:50px 20px;
+}
+}
 header
 {   position: absolute;
     width: 100%;
@@ -54,6 +62,19 @@ header
     color: #fff;
     z-index:1;
 }
+@media screen and (max-width:800px)
+{
+header
+{
+padding:20px 50px;
+flex-direction:column;
+}
+header h2
+{
+margin-bottom:15px;
+}
+}
+
 
 @keyframes fadein
 {
@@ -86,6 +107,41 @@ nav li
     text-align: center;
     min-height: 100vh;
     color:#fff;
+}
+
+@media screen and (max-width:800px)
+{
+.hero
+{
+min-height:600px;
+}
+.hero h1
+{
+font-size:48px;
+}
+.hero h3
+{
+font-size:24px;
+}
+.hero .btn
+{
+padding:15px 40px;
+}
+}
+
+@media screen and (max-width:1100px)
+{
+.destination .grid li.small,.destination .grid li.large
+{
+flex-basis:50% !important;
+}
+}
+@media screen and (max-width:800px)
+{
+.destination .grid li.small,.destination .grid li.large
+{
+    flex-basis: 100% !important;
+}
 }
 
 .hero .background-image
@@ -283,4 +339,49 @@ align-self:center;
 footer
 {
 margin-top:35px;
+}
+
+@media screen and (max-width:800px)
+{
+.packeges .grid li
+{
+flex-basis:100%;
+padding:20px;
+}
+}
+@media screen and (max-width:800px)
+{
+.testimonials .quote
+{
+font-size:18px;
+margin:15px 0;
+}
+.testimonials .author
+{
+font-size:14px;
+}
+}
+@media screen and (max-width:1000px)
+{
+section.contact form input
+{
+flex-basis:100% !important;
+margin:0 0 20px 0;
+}
+}
+@media screen and (max-width:1100px)
+{
+footer
+{
+flex-direction:column;
+}
+footer p
+{
+text-align:center;
+margin-bottom:20px;
+}
+footer ul li
+{
+margin: 0 8px;
+}
 }
